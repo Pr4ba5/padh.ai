@@ -1,4 +1,3 @@
-# padh.ai
 
 ![padh.ai Logo](./assets/images/splash11.png)
 
