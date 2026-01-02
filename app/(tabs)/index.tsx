@@ -1,4 +1,3 @@
-// app/(tabs)/index.tsx  → Home Dashboard
 import React, { useEffect, useState } from "react";
 import {
   SafeAreaView,
@@ -7,7 +6,7 @@ import {
   Text,
   View
 } from "react-native";
-import { storage } from "../utils/storge"; // Adjust path if needed
+import { storage } from "../utils/storge";
 
 type Task = { id: string; title: string; completed: boolean; dueDate: string };
 type Note = { id: string; title: string; updatedAt: string };
@@ -66,13 +65,13 @@ const HomeScreen = () => {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 20 }}>
-        {/* Header */}
+       
         <View style={styles.header}>
           <Text style={styles.greeting}>{Greeting()} User</Text>
           <Text style={styles.date}>{dateStr}</Text>
         </View>
 
-        {/* Today's Classes */}
+        
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>Today's Classes</Text>
           {todayClasses.length === 0 ? (
